@@ -1,0 +1,14 @@
+@use "../partials/variables" as *;
+
+// Mixins
+
+@mixin flexbox(
+  $direction: column,
+  $justify-content: flex-start,
+  $align-items: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
