@@ -1,37 +1,77 @@
+import { useState } from "react";
 import "./QuizForm.scss";
 import Form from "react-bootstrap/Form";
 
-function QuizForm() {
+function QuizForm({
+  formData1,
+  formData2,
+  formData3,
+  formData4,
+  formData5,
+  setResultArray,
+}) {
+  const [activeProps, setActiveProps] = useState("");
+
+  if (formData1 !== undefined && activeProps !== formData1) {
+    setActiveProps(formData1);
+    return;
+  }
+  if (formData2 !== undefined && activeProps !== formData2) {
+    setActiveProps(formData2);
+    return;
+  }
+  if (formData3 !== undefined && activeProps !== formData3) {
+    setActiveProps(formData3);
+    return;
+  }
+  if (formData4 !== undefined && activeProps !== formData4) {
+    setActiveProps(formData4);
+    return;
+  }
+  if (formData5 !== undefined && activeProps !== formData5) {
+    setActiveProps(formData5);
+    return;
+  }
+
+  function handleForm(event) {
+    console.log("i ran");
+    event.preventDefault();
+    console.log(event.target.form);
+  }
+
   return (
     <>
       <div>
-        <Form>
-          <div key={`default-checkbox`} className="mb-3">
+        <Form onSubmit={handleForm}>
+          <div key={`default-${activeProps.option1}`} className="mb-3">
             <Form.Check // prettier-ignore
               type="checkbox"
-              id={`default-checkbox`}
-              label={`Align Pants`}
+              id={`default-${activeProps.option1}`}
+              label={`${activeProps.option1}`}
             />
           </div>
-          <div key={`default-checkbox`} className="mb-3">
+
+          <div key={`default-${activeProps.option2}`} className="mb-3">
             <Form.Check // prettier-ignore
               type="checkbox"
-              id={`default-checkbox`}
-              label={`Align T-shirt`}
+              id={`default-${activeProps.option2}`}
+              label={`${activeProps.option2}`}
             />
           </div>
-          <div key={`default-checkbox`} className="mb-3">
+
+          <div key={`default-${activeProps.option3}`} className="mb-3">
             <Form.Check // prettier-ignore
               type="checkbox"
-              id={`default-checkbox`}
-              label={`Align Shorts`}
+              id={`default-${activeProps.option3}`}
+              label={`${activeProps.option3}`}
             />
           </div>
-          <div key={`default-checkbox`} className="mb-3">
+
+          <div key={`default-${activeProps.option4}`} className="mb-3">
             <Form.Check // prettier-ignore
               type="checkbox"
-              id={`default-checkbox`}
-              label={`Align Skirt`}
+              id={`default-${activeProps.option4}`}
+              label={`${activeProps.option4}`}
             />
           </div>
         </Form>

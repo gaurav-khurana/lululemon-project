@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "Title": "Hotty Hot High-Rise Lined Short",
+    "Description": "Weightless coverage for long strides, deep squats, and everything in between.",
+    "Feature": "Lightweight, strechy",
+    "Activity": "Running",
+    "Cost": "$68"
+  },
+  {
+    "Id": 2,
+    "Title": "Swiftly Tech Long-Sleeve Shirt 2.0 Race Length",
+    "Description": "A high-performing top that adapts seamlessly to every way you like to sweat.",
+    "Feature": "Silverescent™ ,Breathable",
+    "Activity": "Running",
+    "Cost": "$78"
+  },
+  {
+    "Id": 3,
+    "Title": "Swift Speed High-Rise Tight",
+    "Description": "Non-stop stretch and support that enables smooth, strong strides.",
+    "Feature": "Pockets, smooth",
+    "Activity": "Hiking",
+    "Cost": "$99"
+  },
+  {
+    "Id": 4,
+    "Title": "Wunder Train Strappy Racer Bra ",
+    "Description": "Ribbed Light Support, Focus on every push, press, and hold. This narrow-strap bra is intentionally designed with a light feel that lets you stay hyper-mindful.",
+    "Feature": "Removeable cups, Sweat-wicking",
+    "Activity": "Hiking",
+    "Cost": "$64"
+  },
+  {
+    "Id": 5,
+    "Title": "lululemon Align™ High-Rise Pant with Pockets",
+    "Description": "Super soft, next-to-nothing feel, but with more pockets.",
+    "Feature": "Pockets, Stretch",
+    "Activity": "Yoga",
+    "Cost": "$138"
+  },
+  {
+    "Id": 6,
+    "Title": "Wrap-Front Ribbed Long-Sleeve Top",
+    "Description": "Quick-drying fabric, transitioning from yoga to the rest of your day is no sweat.",
+    "Feature": "Breathable, Stretch, Wicking",
+    "Activity": "Yoga",
+    "Cost": "$78"
+  },
+  {
+    "Id": 7,
+    "Title": "Lightweight Tennis Dress",
+    "Description": "This lightweight tennis dress gives you support and comfort to match your momentum on and off the court.",
+    "Feature": "Wicking, Stretch",
+    "Activity": "Pickleball",
+    "Cost": "$118"
+  },
+  {
+    "Id": 8,
+    "Title": "Pace Rival Mid-Rise Skirt Long",
+    "Description": "Pockets in your skirt, that's a yes. From tennis to trail running, drop-in pockets let you keep essentials close.",
+    "Feature": "Pockets",
+    "Activity": "Pickleball",
+    "Cost": "$78"
+  },
+  {
+    "Id": 9,
+    "Title": "Wunder Train Bodysuit",
+    "Description": "A soft, wide waistband offers comfortable coverage that won't dig in.",
+    "Feature": "Breathable, Sweat-wicking",
+    "Activity": "Cycling",
+    "Cost": "$99"
+  },
+  {
+    "Id": 10,
+    "Title": "Wunder Train High-Rise Short with Pockets",
+    "Description": "Train hard, not hot. Powered by Everlux™ fabric, this pocketed version of our Wunder Train collection lets you get sweaty, stay focused, and keep workout essentials close.",
+    "Feature": "Breathable, stretch",
+    "Activity": "Cycling",
+    "Cost": "$74"
+  }
+]
