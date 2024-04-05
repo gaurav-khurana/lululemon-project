@@ -3,19 +3,67 @@
 @use '../../styles/partials/typography';
 @use '../../styles/partials/variables';
 
-
+.homepage__main {
+width: 100vw;
+@font-face {
+    font-family: Calibre;
+    src: url("../../assets/fonts/Calibre-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+}
 
 .homepage__hero {
-    height: 50vh;
-    width: auto;
+    height: 531px;
+    width: 1224px;
     background-color: gray;
+    margin-top: 75px;
+    margin-left: 162px;
 }
+
 
 .homepage__bottom-pic {
-    width: 80vw;
+    // width: 80vw;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+
+
 .homepage__pickleball {
-    width: 80vw;
+    width: max-content;
+    max-width: 100%;
+    margin: 0;
+    // height: 10px;
+}
+
+.homepage__mainCard {
+    position: relative;
+    bottom: 425px;
+    padding: 2rem;
+    width: fit-content;
+    left: 100px;
+    background-color: white;
+    &--title {
+        font-weight: bold;
+        color: red;
+    }
+}
+
+.homepage__button {
+    color: #130101;
+    position: relative;
+bottom: 300px;
+padding: 6px;
+gap: 10px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+font-size: 20px;
+
+}
+
+.homepage__button:hover {
+    background-color: #c8102e;;
 }
