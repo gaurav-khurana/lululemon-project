@@ -9,19 +9,19 @@
   },
   {
     "id": 2,
-    "question": "Type of activity?",
+    "question": "What type of activity are you interested in? Choose one:",
     "option1": "Running",
-    "option2": "Hiking",
+    "option2": "Pickleball",
     "option3": "Cycling",
     "option4": "Yoga",
     "option5": "Ski / Snowboarding",
     "option6": "Mountain climbing",
-    "option7": "Pickleball",
+    "option7": "Hiking",
     "option8": "Others"
   },
   {
     "id": 3,
-    "question": "Feature most important?",
+    "question": "What feature is most important to you in technical apparel??",
     "option1": "Flexibility",
     "option2": "Moisture-wicking",
     "option3": "Breathability",
@@ -29,7 +29,7 @@
   },
   {
     "id": 4,
-    "question": "Pockets for gadgets?",
+    "question": "Do you prefer technical apparel to have pockets for gadgets?",
     "option1": "Yes",
     "option2": "No",
     "option3": "Good to have",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "question": "Sustainability & eco-friendly?",
+    "question": "How important is sustainability and eco-friendliness to you when choosing technical apparel?",
     "option1": "Yes",
     "option2": "No",
     "option3": "May be",
