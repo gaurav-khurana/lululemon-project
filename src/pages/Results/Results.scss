@@ -37,12 +37,20 @@
 
     @include flexbox(column, flex-start, flex-start);
   }
-
+  a {
+    color: $color-primary-black;
+    text-decoration: none;
+  }
   &__title {
     font-size: $desk-font-section-header;
     line-height: 2rem;
     font-weight: 600;
     margin-bottom: $mob-spacing-small;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-primary-red;
+    }
   }
 
   &__text {

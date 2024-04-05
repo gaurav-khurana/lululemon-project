@@ -1,14 +1,29 @@
 @use "../../styles/partials/typography";
+@use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-* {
-  font-size: 1rem;
-}
 .quiz-container {
   height: 90vh;
   width: 100vw;
+
+  @include flexbox(column, center, flex-start);
 }
+
+.quiz {
+  width: 50vw;
+  height: 75vh;
+  margin-inline: auto;
+
+  &__btn {
+    font-size: $desk-font-section-header;
+  }
+}
+
 .progress-bar {
   width: 50vw;
+}
+
+.question {
+  font-size: $desk-font-header;
 }

@@ -30,7 +30,9 @@ function Results() {
               </div>
 
               <div className="products-text-container">
-                <h2 className="products__title">{product1.Title}</h2>
+                <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-dresses/Lightweight-Tennis-Dress/_/prod11580176?color=33068&tasid=x0W3Tkffko&taterm=lighweight%20tennis%20dress">
+                  <h2 className="products__title">{product1.Title}</h2>
+                </Link>
 
                 <h3 className="products__text">{product1.Description}</h3>
 
@@ -49,7 +51,9 @@ function Results() {
                 />
               </div>
               <div className="products-text-container">
-                <h2 className="products__title">{product2.Title}</h2>
+                <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-skirts/Pace-Rival-Skirt-Tall/_/prod3770001?color=34668&tasid=rTPD8GQ2OJ&taterm=pace%20rival%20dress%20">
+                  <h2 className="products__title">{product2.Title}</h2>
+                </Link>
 
                 <h3 className="products__text">{product2.Description}</h3>
 

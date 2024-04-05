@@ -1,0 +1,8 @@
+// @use "../../styles/partials/typography";
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.checkbox {
+  font-size: $desk-font-section-header;
+}
