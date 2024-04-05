@@ -1,40 +1,22 @@
 import "./HomePage.scss";
 // import lulu from '../../assets/images/luluHero.png'
-import pickleball from '../../assets/images/starterPage.png'
-import MainCard from '../../assets/images/MainCard.png'
+// import QuizHero from "../../assets/images/quizhero.jpg";
+import { Link } from "react-router-dom";
+// import MainCard from '../../assets/images/MainCard.png'
 
 function HomePage() {
   return (
     <>
-      <div className="homepage__main">HomePage
-
-
-
-        <div className="homepage__hero">
-
+      <main className="homepage__main">
+        <div className="homepage__content">
+          <h2 className="homepage__heading">
+            Start your personalized experience by filling out our quick quiz.
+          </h2>
+          <Link to="/quiz/1">
+            <button className="homepage__button">BEGIN QUIZ</button>
+          </Link>
         </div>
-{/* 
-        <img src={MainCard} alt="Clickable Card" className="homepage__mainCard2" /> */}
-        <form className="homepage__mainCard">
-        <h2 className="homepage__mainCard--title">lululemon</h2> <br/>
-        <h3>Women's What's New</h3>;
-        <h3>Men's What's New</h3>;
-        <h3>All Women's</h3>;
-        <h3>All Men's</h3>;
-        <h3>All Accessories</h3>;
-      </form>
-      <div>
-        <button className="homepage__button">
-          {/* <h2> */}
-            DISCOVER YOUR PERSONALIZED CLOSET
-            {/* </h2> */}
-        </button>
-      </div>
-        <div className="homepage__bottom-pic">
-          {/* <img src={lulu} alt="pickleball" className="homepage__pickleball" /> */}
-          <img src={pickleball} alt="starter" className="homepage__picleball" />
-        </div>
-      </div>
+      </main>
     </>
   );
 }

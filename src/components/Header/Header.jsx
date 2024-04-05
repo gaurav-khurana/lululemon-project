@@ -83,18 +83,19 @@
 
 // export default Header;
 
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.scss";
-import HeaderPic from "../../assets/images/header.png";
+// import HeaderPic from "../../assets/images/header.png";
 import logo from "../../assets/icons/Lululemon-logo.svg";
 import UserLogo from "../../assets/icons/user.svg";
 import HeartLogo from "../../assets/icons/heart.svg";
 import BagLogo from "../../assets/icons/bag.svg";
-import SearchLogo from "../../assets/icons/Search.svg";
+import { Link } from "react-router-dom";
+// import SearchLogo from "../../assets/icons/Search.svg";
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
@@ -114,26 +115,40 @@ function Header() {
                   style={{ maxHeight: "100px" }}
                   navbarScroll
                 >
-                  <img
-                    className="navbar__logo"
-                    src={logo}
-                    alt="lululemon logo"
-                  />
-                  <Nav.Link className="navbar__links" href="#action1">
+                  <Link to="https://shop.lululemon.com/en-ca">
+                    <img
+                      className="navbar__logo"
+                      src={logo}
+                      alt="lululemon logo"
+                    />
+                  </Link>
+                  <Nav.Link
+                    className="navbar__links"
+                    href="https://shop.lululemon.com/en-ca/story/women"
+                  >
                     WOMEN
                   </Nav.Link>
-                  <Nav.Link className="navbar__links" href="#action2">
+                  <Nav.Link
+                    className="navbar__links"
+                    href="https://shop.lululemon.com/en-ca/story/men"
+                  >
                     MEN
                   </Nav.Link>
-                  <Nav.Link className="navbar__links" href="#action2">
+                  <Nav.Link
+                    className="navbar__links"
+                    href="https://shop.lululemon.com/en-ca/c/accessories/_/N-8ok"
+                  >
                     ACCESSORIES
                   </Nav.Link>
-                  <Nav.Link className="navbar__links" href="#action2">
+                  <Nav.Link
+                    className="navbar__links"
+                    href="https://shop.lululemon.com/en-ca/c/shoes/_/N-8ti"
+                  >
                     SHOES
                   </Nav.Link>
                   <Nav.Link
                     className="navbar__links navbar__links--red"
-                    href="#action2"
+                    href="https://shop.lululemon.com/en-ca/c/sale/_/N-8t5"
                   >
                     WE MADE TOO MUCH
                   </Nav.Link>
@@ -160,21 +175,27 @@ function Header() {
                   aria-label="Search"
                 />
                 {/* <Button variant="outline-success">Search</Button> */}
-                <img
-                  className="navbar__logo navbar__logo--right"
-                  src={UserLogo}
-                  alt="User Logo"
-                />
-                <img
-                  className="navbar__logo navbar__logo--right"
-                  src={HeartLogo}
-                  alt="Heart Logo"
-                />
-                <img
-                  className="navbar__logo navbar__logo--right"
-                  src={BagLogo}
-                  alt="Cart Logo"
-                />
+                <Link tp="https://shop.lululemon.com/account/login">
+                  <img
+                    className="navbar__logo navbar__logo--right"
+                    src={UserLogo}
+                    alt="User Logo"
+                  />
+                </Link>
+                <Link to="https://shop.lululemon.com/account/login?mode=wishlist-landing&bvRedirectUrl=%2Faccount%2Fwishlist%3Fmode">
+                  <img
+                    className="navbar__logo navbar__logo--right"
+                    src={HeartLogo}
+                    alt="Heart Logo"
+                  />
+                </Link>
+                <Link to="https://shop.lululemon.com/shop/mybag">
+                  <img
+                    className="navbar__logo navbar__logo--right"
+                    src={BagLogo}
+                    alt="Cart Logo"
+                  />
+                </Link>
               </Form>
             </div>
           </Navbar.Collapse>

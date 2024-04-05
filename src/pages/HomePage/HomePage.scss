@@ -1,69 +1,48 @@
-@use '../../styles/partials/global';
-@use '../../styles/partials/mixins';
-@use '../../styles/partials/typography';
-@use '../../styles/partials/variables';
+@use "../../styles/partials/global";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables" as *;
 
-.homepage__main {
-width: 100vw;
-@font-face {
-    font-family: Calibre;
-    src: url("../../assets/fonts/Calibre-Regular.woff");
-    font-style: normal;
-    font-weight: 400;
-}
-}
+.homepage {
+  &__main {
+    width: 100vw;
+    height: 90vh;
 
-.homepage__hero {
-    height: 531px;
-    width: 1224px;
-    background-color: gray;
-    margin-top: 75px;
-    margin-left: 162px;
-}
+    @include flexbox(column, center, center);
+  }
 
+  &__content {
+    width: 70vw;
+    height: 70vh;
+    background-image: url("../../assets/images/quizhero.jpg");
+    background-position: center;
+    background-size: cover;
+    // background-color: gold;
+    background-repeat: no-repeat;
 
-.homepage__bottom-pic {
-    // width: 80vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+    @include flexbox(column, center, flex-start);
+  }
 
+  &__heading {
+    font-size: $desk-font-header;
+    color: $color-background-header;
+    width: 30vw;
+    margin-left: 5vw;
+    margin-bottom: $desk-spacing-big;
+    font-weight: 600;
+  }
 
-
-.homepage__pickleball {
-    width: max-content;
-    max-width: 100%;
-    margin: 0;
-    // height: 10px;
-}
-
-.homepage__mainCard {
-    position: relative;
-    bottom: 425px;
-    padding: 2rem;
-    width: fit-content;
-    left: 100px;
-    background-color: white;
-    &--title {
-        font-weight: bold;
-        color: red;
-    }
-}
-
-.homepage__button {
-    color: #130101;
-    position: relative;
-bottom: 300px;
-padding: 6px;
-gap: 10px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
-font-size: 20px;
-
-}
-
-.homepage__button:hover {
-    background-color: #c8102e;;
+  &__button {
+    width: 10vw;
+    height: $button-height;
+    font-size: $desk-font-label-button;
+    background-color: $color-primary-red;
+    color: $color-background-header;
+    border: 0;
+    border-radius: $button-radius;
+    margin-left: 5vw;
+    cursor: pointer;
+    // font-weight: 600;
+    letter-spacing: 1px;
+  }
 }

@@ -93,7 +93,7 @@ function Results() {
             <h3 className="cart__text cart__text--bold">CAD $196.00</h3>
           </div>
 
-          <Link to="/">
+          <Link to="https://shop.lululemon.com/en-ca/">
             <button className="btn" type="submit">
               <img className="btn__logo" src={logo} alt="lululemon log" />{" "}
               Checkout
