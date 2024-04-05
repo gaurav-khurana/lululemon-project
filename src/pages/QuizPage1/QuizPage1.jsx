@@ -24,19 +24,26 @@ function QuizPage1() {
           <div className="progress-bar">
             <ProgressBarWithLabel activeValue1={activeValue1} />
           </div>
+
           <h2 className="question">{formData1.question}</h2>
+          <h3 className="question__text">Select 1</h3>
+
           <QuizForm formData1={formData1} />
           {/* setResultArray={setResultArray} */}
-          <Link to="/">
-            <button className="quiz__btn quiz__btn--cancel" type="submit">
-              Cancel
-            </button>
-          </Link>
-          <Link to="/quiz/2">
-            <button className="quiz__btn" type="submit">
-              Next
-            </button>
-          </Link>
+
+          <div className="btn-container">
+            <Link to="/">
+              <button className="quiz__btn quiz__btn--cancel" type="submit">
+                Cancel
+              </button>
+            </Link>
+
+            <Link to="/quiz/2">
+              <button className="quiz__btn" type="submit">
+                Next
+              </button>
+            </Link>
+          </div>
         </section>
       </main>
     </>

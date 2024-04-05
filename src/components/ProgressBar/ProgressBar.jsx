@@ -37,6 +37,7 @@ function ProgressBarWithLabel({
       label={`${activeValue}%`}
       min={0}
       max={100}
+      // style={width: 20%}
     />
   );
 }

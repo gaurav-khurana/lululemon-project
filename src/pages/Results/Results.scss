@@ -37,10 +37,12 @@
 
     @include flexbox(column, flex-start, flex-start);
   }
+
   a {
     color: $color-primary-black;
     text-decoration: none;
   }
+
   &__title {
     font-size: $desk-font-section-header;
     line-height: 2rem;

@@ -11,21 +11,31 @@ function QuizPage4() {
   return (
     <>
       <main className="quiz-container">
-        <div className="progress-bar">
-          <ProgressBarWithLabel activeValue4={activeValue4} />
-        </div>
+        <section className="quiz">
+          <div className="progress-bar">
+            <ProgressBarWithLabel activeValue4={activeValue4} />
+          </div>
 
-        <h2 className="question">{formData4.question}</h2>
+          <h2 className="question">{formData4.question}</h2>
+          <h3 className="question__text">Select 1</h3>
 
-        <QuizForm formData4={formData4} />
+          <QuizForm formData4={formData4} />
+          {/* setResultArray={setResultArray} */}
 
-        <Link to="/">
-          <button type="submit">Cancel</button>
-        </Link>
+          <div className="btn-container">
+            <Link to="/">
+              <button className="quiz__btn quiz__btn--cancel" type="submit">
+                Cancel
+              </button>
+            </Link>
 
-        <Link to="/quiz/5">
-          <button type="submit">Next</button>
-        </Link>
+            <Link to="/quiz/5">
+              <button className="quiz__btn" type="submit">
+                Next
+              </button>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );
