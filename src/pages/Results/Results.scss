@@ -1,0 +1,107 @@
+// @use "../../styles/partials/typography";
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.results {
+  width: 100vw;
+  padding: $mob-spacing-big;
+
+  @include flexbox(row, space-between, center);
+
+  &__heading {
+    margin-bottom: $desk-spacing-big;
+    font-size: $desk-font-header;
+    font-weight: 600;
+  }
+}
+
+.products {
+  width: 65vw;
+  //   height: 75vh;
+  margin-right: $desk-spacing-big;
+
+  &-container {
+    @include flexbox(row, space-between, flex-start);
+  }
+
+  &__image {
+    height: 20rem;
+    margin-right: $mob-spacing-big;
+    margin-bottom: $desk-spacing-small;
+    border-radius: $button-radius;
+  }
+
+  &-text-container {
+    height: 20rem;
+
+    @include flexbox(column, flex-start, flex-start);
+  }
+
+  &__title {
+    font-size: $desk-font-section-header;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $mob-spacing-small;
+  }
+
+  &__text {
+    font-size: $desk-font-subheader-body;
+    margin-bottom: $mob-spacing-small;
+
+    &--price {
+      font-weight: 600;
+    }
+  }
+}
+
+.cart {
+  width: 35vw;
+  height: 50vh;
+  //   text-align: center;
+
+  @include flexbox(column, space-between, flex-start);
+
+  &-item-container {
+    width: 25vw;
+    border-bottom: $divider-width solid $color-background-grey;
+
+    @include flexbox(row, space-between, center);
+  }
+
+  &__title {
+    font-size: $desk-font-section-header;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: $desk-font-subheader-body;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: $button-width;
+    width: 25vw;
+    height: $button-height;
+    border-radius: $button-radius;
+    background-color: $color-primary-red;
+    color: $color-background-header;
+    font-size: $desk-font-subheader-body;
+    // font-weight: 600;
+    cursor: pointer;
+
+    @include flexbox(row, center, center);
+
+    &__logo {
+      width: 26px;
+      margin-right: 10px;
+    }
+  }
+}

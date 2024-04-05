@@ -2,7 +2,14 @@ import { useState } from "react";
 import "./QuizForm.scss";
 import Form from "react-bootstrap/Form";
 
-function QuizForm({ formData1, formData2, formData3, formData4, formData5 }) {
+function QuizForm({
+  formData1,
+  formData2,
+  formData3,
+  formData4,
+  formData5,
+  setResultArray,
+}) {
   const [activeProps, setActiveProps] = useState("");
 
   if (formData1 !== undefined && activeProps !== formData1) {
@@ -26,10 +33,16 @@ function QuizForm({ formData1, formData2, formData3, formData4, formData5 }) {
     return;
   }
 
+  function handleForm(event) {
+    console.log("i ran");
+    event.preventDefault();
+    console.log(event.target.form);
+  }
+
   return (
     <>
       <div>
-        <Form>
+        <Form onSubmit={handleForm}>
           <div key={`default-${activeProps.option1}`} className="mb-3">
             <Form.Check // prettier-ignore
               type="checkbox"

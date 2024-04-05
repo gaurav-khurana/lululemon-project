@@ -2,27 +2,29 @@
 
 // primary colors
 
-$color-primary-red: #c8102f; // logo red
-$color-primary-black: #333333; // text black
+$color-primary-red: #c8102e; // logo red
+$color-primary-black: #130101; // text black
 
 // secondary colors
 
 $color-background-header: #ffffff; // header background color
 $color-background-page: #fafafa; // page background color
+$color-background-grey: #eaeaea; // progress bar background color
 
 // typography - mobile
 
 // typography - tablet & desktop
 
-$desk-font-header: 3.3rem;
-$desk-font-section-header: 1.2rem;
-$desk-font-subheader-body: 1.4rem;
-$desk-font-label-button: 1.2rem;
+$desk-font-header: 3rem;
+$desk-font-section-header: 2.4rem;
+$desk-font-subheader-body: 1.6rem;
+$desk-font-label-button: 1.4rem;
 
 // PADDING OR MARGIN - MOBILE
 
 $mob-spacing-big: 2.4rem;
 $mob-spacing-small: 1.6rem;
+$padding-small: 1rem;
 
 // PADDING OR MARGIN - TABLET-DESKTOP
 
@@ -31,9 +33,10 @@ $desk-spacing-small: 2.4rem;
 
 // BUTTONS
 
-$button-height: 4rem;
-$button-width-mobile: 3.2rem;
+$button-height: 4.2rem;
+$button-width: 9.2rem;
 $button-radius: 4px;
+$button-padding: 1.6rem;
 
 // DIVIDER
 
