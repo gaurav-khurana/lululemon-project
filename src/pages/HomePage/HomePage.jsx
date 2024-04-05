@@ -1,8 +1,5 @@
 import "./HomePage.scss";
-// import lulu from '../../assets/images/luluHero.png'
-// import QuizHero from "../../assets/images/quizhero.jpg";
 import { Link } from "react-router-dom";
-// import MainCard from '../../assets/images/MainCard.png'
 
 function HomePage() {
   return (

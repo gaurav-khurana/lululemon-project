@@ -18,11 +18,10 @@
 
 .products {
   width: 65vw;
-  //   height: 75vh;
   margin-right: $desk-spacing-big;
 
   &-container {
-    @include flexbox(row, space-between, flex-start);
+    @include flexbox(row, flex-start, flex-start);
   }
 
   &__image {
@@ -36,6 +35,12 @@
     height: 20rem;
 
     @include flexbox(column, flex-start, flex-start);
+  }
+
+  &-title-container,
+  &-price-container {
+    width: 45vw;
+    @include flexbox(row, space-between, center);
   }
 
   a {
@@ -59,8 +64,9 @@
     font-size: $desk-font-subheader-body;
     margin-bottom: $mob-spacing-small;
 
-    &--price {
-      font-weight: 600;
+    &--underline {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
@@ -68,7 +74,6 @@
 .cart {
   width: 35vw;
   height: 50vh;
-  //   text-align: center;
 
   @include flexbox(column, space-between, flex-start);
 
@@ -104,7 +109,6 @@
     background-color: $color-primary-red;
     color: $color-background-header;
     font-size: $desk-font-subheader-body;
-    // font-weight: 600;
     cursor: pointer;
 
     @include flexbox(row, center, center);
@@ -112,6 +116,23 @@
     &__logo {
       width: 26px;
       margin-right: 10px;
+    }
+  }
+}
+
+.shipping {
+  &-container {
+    width: 45vw;
+    margin-top: $mob-spacing-big;
+    @include flexbox(row, space-between, center);
+  }
+
+  &__text {
+    font-size: $desk-font-subheader-body;
+
+    &--underline {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }

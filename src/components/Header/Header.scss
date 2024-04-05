@@ -4,7 +4,6 @@
 @use "../../styles/partials/variables" as *;
 
 .header__main {
-  // @include flexbox (column, center,flex-start);
   display: flex;
   width: 100vw;
   @include flexbox(row, space-between, center);
@@ -17,7 +16,6 @@
 .navbar {
   width: 100vw;
   height: 10rem;
-  //   background-color: gold;
 
   @include flexbox(row, space-evenly, center);
 
@@ -25,6 +23,10 @@
     width: 36px;
     margin-right: $mob-spacing-big;
     margin-bottom: 1rem;
+
+    &--main {
+      margin-left: 1.2rem;
+    }
 
     &--right {
       height: 26px;

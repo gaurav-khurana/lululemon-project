@@ -33,16 +33,10 @@ function QuizForm({
     return;
   }
 
-  function handleForm(event) {
-    console.log("i ran");
-    event.preventDefault();
-    console.log(event.target.form);
-  }
-
   return (
     <>
       <div>
-        <Form onSubmit={handleForm}>
+        <Form>
           <div
             key={`default-${activeProps.option1}`}
             className="mb-3 checkbox-container"

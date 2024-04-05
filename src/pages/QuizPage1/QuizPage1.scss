@@ -23,6 +23,7 @@
     height: $button-height;
     width: $button-width;
     border-radius: $button-radius;
+    padding: 1rem 0;
 
     &--cancel {
       border: $divider-width solid $color-primary-black;
@@ -51,4 +52,16 @@
   margin-top: $desk-spacing-big;
 
   @include flexbox(row, space-between, center);
+}
+
+.checkbox {
+  font-size: $desk-font-section-header;
+  font-size: 2.4rem;
+  margin-top: $desk-spacing-small;
+  color: #171313;
+}
+// input:checked
+.form-check-input {
+  border: $divider-width solid #171313;
+  border-radius: 50%;
 }

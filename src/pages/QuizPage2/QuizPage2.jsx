@@ -20,7 +20,6 @@ function QuizPage2() {
           <h3 className="question__text">Select 1</h3>
 
           <QuizForm formData2={formData2} />
-          {/* setResultArray={setResultArray} */}
 
           <div className="btn-container">
             <Link to="/">

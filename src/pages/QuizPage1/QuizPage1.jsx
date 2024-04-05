@@ -3,19 +3,10 @@ import ProgressBarWithLabel from "../../components/ProgressBar/ProgressBar";
 import QuizForm from "../../components/QuizForm/QuizForm";
 import "./QuizPage1.scss";
 import formData from "../../assets/data/form-data.json";
-// import { useState } from "react";
 
 function QuizPage1() {
   const formData1 = formData[0];
   const activeValue1 = 20;
-
-  // const [resultArray, setResultArray] = useState([]);
-
-  // function handleForm(event) {
-  //   event.preventDefault();
-  //   console.log(event.target.form);
-
-  // }
 
   return (
     <>
@@ -29,7 +20,6 @@ function QuizPage1() {
           <h3 className="question__text">Select 1</h3>
 
           <QuizForm formData1={formData1} />
-          {/* setResultArray={setResultArray} */}
 
           <div className="btn-container">
             <Link to="/">

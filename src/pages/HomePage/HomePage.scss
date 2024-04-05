@@ -6,7 +6,7 @@
 .homepage {
   &__main {
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
 
     @include flexbox(column, center, center);
   }
@@ -17,7 +17,6 @@
     background-image: url("../../assets/images/quizhero.jpg");
     background-position: center;
     background-size: cover;
-    // background-color: gold;
     background-repeat: no-repeat;
 
     @include flexbox(column, center, flex-start);
@@ -42,7 +41,12 @@
     border-radius: $button-radius;
     margin-left: 5vw;
     cursor: pointer;
-    // font-weight: 600;
     letter-spacing: 1px;
+
+    padding: 1.2rem 0;
   }
+}
+
+a {
+  text-decoration: none;
 }

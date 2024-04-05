@@ -6,11 +6,9 @@ import logo from "../../assets/icons/Lululemon-logo.svg";
 import { Link } from "react-router-dom";
 
 function Results() {
-  console.log(products);
   const product1 = products[6];
   const product2 = products[7];
-  console.log(product1);
-  console.log(product2);
+
   return (
     <>
       <main className="results">
@@ -30,15 +28,34 @@ function Results() {
               </div>
 
               <div className="products-text-container">
-                <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-dresses/Lightweight-Tennis-Dress/_/prod11580176?color=33068&tasid=x0W3Tkffko&taterm=lighweight%20tennis%20dress">
-                  <h2 className="products__title">{product1.Title}</h2>
-                </Link>
+                <div className="products-title-container">
+                  <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-dresses/Lightweight-Tennis-Dress/_/prod11580176?color=33068&tasid=x0W3Tkffko&taterm=lighweight%20tennis%20dress">
+                    <h2 className="products__title">{product1.Title}</h2>
+                  </Link>
+                  <h3 className="products__text ">Item Price</h3>
+                </div>
 
-                <h3 className="products__text">{product1.Description}</h3>
+                <div className="products-price-container">
+                  <h3 className="products__text ">Sinatra Blue</h3>
+                  <h3 className="products__text products__text--price">
+                    {product1.Cost}
+                  </h3>
+                </div>
 
-                <h3 className="products__text products__text--price">
-                  {product1.Cost}
+                <h3 className="products__text ">Size 6</h3>
+
+                <h3 className="products__text products__text--underline ">
+                  Edit
                 </h3>
+
+                <div className="shipping-container">
+                  <h3 className="shipping__text">
+                    Free Shipping + Free Returns
+                  </h3>
+                  <p className="shipping__text shipping__text--underline">
+                    Remove
+                  </p>
+                </div>
               </div>
             </article>
 
@@ -51,20 +68,37 @@ function Results() {
                 />
               </div>
               <div className="products-text-container">
-                <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-skirts/Pace-Rival-Skirt-Tall/_/prod3770001?color=34668&tasid=rTPD8GQ2OJ&taterm=pace%20rival%20dress%20">
-                  <h2 className="products__title">{product2.Title}</h2>
-                </Link>
+                <div className="products-title-container">
+                  <Link to="https://shop.lululemon.com/en-ca/p/skirts-and-dresses-skirts/Pace-Rival-Skirt-Tall/_/prod3770001?color=34668&tasid=rTPD8GQ2OJ&taterm=pace%20rival%20dress%20">
+                    <h2 className="products__title">{product2.Title}</h2>
+                  </Link>
+                  <h3 className="products__text">Item Price</h3>
+                </div>
 
-                <h3 className="products__text">{product2.Description}</h3>
+                <div className="products-price-container">
+                  <h3 className="products__text">Hot Heat</h3>
+                  <h3 className="products__text products__text--price">
+                    {product2.Cost}
+                  </h3>
+                </div>
 
-                <h3 className="products__text products__text--price">
-                  {product2.Cost}
+                <h3 className="products__text">Size 6</h3>
+
+                <h3 className="products__text products__text--underline">
+                  Edit
                 </h3>
+
+                <div className="shipping-container">
+                  <h3 className="shipping__text">
+                    Free Shipping + Free Returns
+                  </h3>
+                  <p className="shipping__text shipping__text--underline">
+                    Remove
+                  </p>
+                </div>
               </div>
             </article>
           </div>
-
-          {/* <div className="celebs">CELEBS</div> */}
         </section>
         <section className="cart">
           <h2 className="cart__title">Suggested Order Summary</h2>
