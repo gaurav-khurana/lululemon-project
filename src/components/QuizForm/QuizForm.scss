@@ -1,0 +1,16 @@
+// @use "../../styles/partials/typography";
+// @use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.checkbox {
+  font-size: $desk-font-section-header;
+  font-size: 2.4rem;
+  margin-top: $desk-spacing-small;
+  color: #171313;
+}
+// input:checked
+.form-check-input {
+  border: $divider-width solid #171313;
+  border-radius: 50%;
+}

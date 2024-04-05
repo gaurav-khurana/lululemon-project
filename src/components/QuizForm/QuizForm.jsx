@@ -43,32 +43,48 @@ function QuizForm({
     <>
       <div>
         <Form onSubmit={handleForm}>
-          <div key={`default-${activeProps.option1}`} className="mb-3">
+          <div
+            key={`default-${activeProps.option1}`}
+            className="mb-3 checkbox-container"
+          >
             <Form.Check // prettier-ignore
+              className="checkbox"
               type="checkbox"
               id={`default-${activeProps.option1}`}
               label={`${activeProps.option1}`}
             />
           </div>
 
-          <div key={`default-${activeProps.option2}`} className="mb-3">
+          <div
+            key={`default-${activeProps.option2}`}
+            className="mb-3 checkbox-container"
+          >
             <Form.Check // prettier-ignore
+              className="checkbox"
               type="checkbox"
               id={`default-${activeProps.option2}`}
               label={`${activeProps.option2}`}
             />
           </div>
 
-          <div key={`default-${activeProps.option3}`} className="mb-3">
+          <div
+            key={`default-${activeProps.option3}`}
+            className="mb-3 checkbox-container"
+          >
             <Form.Check // prettier-ignore
+              className="checkbox"
               type="checkbox"
               id={`default-${activeProps.option3}`}
               label={`${activeProps.option3}`}
             />
           </div>
 
-          <div key={`default-${activeProps.option4}`} className="mb-3">
+          <div
+            key={`default-${activeProps.option4}`}
+            className="mb-3 checkbox-container"
+          >
             <Form.Check // prettier-ignore
+              className="checkbox"
               type="checkbox"
               id={`default-${activeProps.option4}`}
               label={`${activeProps.option4}`}

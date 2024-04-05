@@ -1,14 +1,54 @@
 @use "../../styles/partials/typography";
+@use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-* {
-  font-size: 1rem;
-}
 .quiz-container {
   height: 90vh;
   width: 100vw;
+
+  @include flexbox(column, center, flex-start);
 }
+
+.quiz {
+  width: 45vw;
+  height: 75vh;
+  margin-inline: auto;
+
+  &__btn {
+    font-size: $desk-font-subheader-body;
+    background-color: $color-primary-black;
+    color: $color-background-header;
+    border: 0;
+    height: $button-height;
+    width: $button-width;
+    border-radius: $button-radius;
+
+    &--cancel {
+      border: $divider-width solid $color-primary-black;
+      background-color: $color-background-header;
+      color: $color-primary-black;
+    }
+  }
+}
+
 .progress-bar {
   width: 50vw;
+}
+
+.question {
+  font-size: $desk-font-header;
+  margin-top: $desk-spacing-small;
+
+  &__text {
+    font-size: $desk-font-subheader-body;
+    color: #4f4c4c;
+  }
+}
+
+.btn-container {
+  width: 50vw;
+  margin-top: $desk-spacing-big;
+
+  @include flexbox(row, space-between, center);
 }
