@@ -1,16 +1,70 @@
-@use '../../styles/partials/global';
-@use '../../styles/partials/mixins';
-@use '../../styles/partials/typography';
-@use '../../styles/partials/variables';
+@use "../../styles/partials/global";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables" as *;
 
 .header__main {
-    // @include flexbox (column, center,flex-start);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+  // @include flexbox (column, center,flex-start);
+  display: flex;
+  width: 100vw;
+  @include flexbox(row, space-between, center);
 }
 
 .header__nav--selection {
-    flex-direction: row;
+  flex-direction: row;
+}
+
+.navbar {
+  width: 100vw;
+  height: 10rem;
+  //   background-color: gold;
+
+  @include flexbox(row, space-evenly, center);
+
+  &__logo {
+    width: 36px;
+    margin-right: $mob-spacing-big;
+    margin-bottom: 1rem;
+
+    &--right {
+      height: 26px;
+      width: 26px;
+      margin-left: 16px;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__links {
+    font-size: $desk-font-section-header;
+    font-weight: 600;
+    color: $color-primary-black;
+    margin-right: $mob-spacing-big;
+
+    &--red {
+      color: $color-primary-red;
+    }
+  }
+}
+
+.d-flex {
+  width: 45vw;
+  @include flexbox(row, flex-start, center);
+}
+
+.me-2 {
+  width: 20vw;
+  height: 5rem;
+  border: $divider-width solid $color-primary-black;
+  margin-left: 10vw;
+
+  &::placeholder {
+    color: $color-primary-black;
+    font-size: $desk-font-subheader-body;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+.navbar-nav {
+  @include flexbox(row, center, center);
 }
