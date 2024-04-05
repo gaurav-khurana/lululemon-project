@@ -1,0 +1,21 @@
+@use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/typography';
+@use '../../styles/partials/variables';
+
+
+
+.homepage__hero {
+    height: 50vh;
+    width: auto;
+    background-color: gray;
+}
+
+.homepage__bottom-pic {
+    width: 80vw;
+    overflow: hidden;
+}
+
+.homepage__pickleball {
+    width: 80vw;
+}
