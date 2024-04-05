@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "question": "How do you identify yourself?",
+    "option1": "Male",
+    "option2": "Female",
+    "option3": "Other",
+    "option4": "Prefer not to say"
+  },
+  {
+    "id": 2,
+    "question": "Type of activity?",
+    "option1": "Running",
+    "option2": "Hiking",
+    "option3": "Cycling",
+    "option4": "Yoga",
+    "option5": "Ski / Snowboarding",
+    "option6": "Mountain climbing",
+    "option7": "Pickleball",
+    "option8": "Others"
+  },
+  {
+    "id": 3,
+    "question": "Feature most important?",
+    "option1": "Flexibility",
+    "option2": "Moisture-wicking",
+    "option3": "Breathability",
+    "option4": "Insulation"
+  },
+  {
+    "id": 4,
+    "question": "Pockets for gadgets?",
+    "option1": "Yes",
+    "option2": "No",
+    "option3": "Good to have",
+    "option4": "No preference"
+  },
+  {
+    "id": 5,
+    "question": "Sustainability & eco-friendly?",
+    "option1": "Yes",
+    "option2": "No",
+    "option3": "May be",
+    "option4": "Not as important"
+  }
+]
