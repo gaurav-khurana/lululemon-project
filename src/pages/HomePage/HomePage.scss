@@ -18,6 +18,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: $button-radius;
 
     @include flexbox(column, center, flex-start);
   }
