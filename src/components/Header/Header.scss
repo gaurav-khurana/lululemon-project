@@ -1,0 +1,16 @@
+@use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/typography';
+@use '../../styles/partials/variables';
+
+.header__main {
+    // @include flexbox (column, center,flex-start);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.header__nav--selection {
+    flex-direction: row;
+}
