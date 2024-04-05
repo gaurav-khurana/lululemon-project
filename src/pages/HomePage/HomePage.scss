@@ -5,6 +5,12 @@
 
 .homepage__main {
 width: 100vw;
+@font-face {
+    font-family: Calibre;
+    src: url("../../assets/fonts/Calibre-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
 }
 
 .homepage__hero {
@@ -44,4 +50,20 @@ width: 100vw;
         font-weight: bold;
         color: red;
     }
+}
+
+.homepage__button {
+    color: #130101;
+    position: relative;
+bottom: 300px;
+padding: 6px;
+gap: 10px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+font-size: 20px;
+
+}
+
+.homepage__button:hover {
+    background-color: #c8102e;;
 }

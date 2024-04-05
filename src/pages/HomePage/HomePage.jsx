@@ -23,6 +23,13 @@ function HomePage() {
         <h3>All Men's</h3>;
         <h3>All Accessories</h3>;
       </form>
+      <div>
+        <button className="homepage__button">
+          {/* <h2> */}
+            DISCOVER YOUR PERSONALIZED CLOSET
+            {/* </h2> */}
+        </button>
+      </div>
         <div className="homepage__bottom-pic">
           {/* <img src={lulu} alt="pickleball" className="homepage__pickleball" /> */}
           <img src={pickleball} alt="starter" className="homepage__picleball" />
